@@ -1,0 +1,8 @@
+- name: "ENGLISH"
+  level: "NATIVE"
+
+- name: "SPANISH"
+  level: "PROFICIENT"
+
+- name: "GERMAN"
+  level: "ELEMENTARY"
