@@ -1,0 +1,36 @@
+- name: Database Testing
+  items:
+    - PostgreSQL
+    - Oracle Database
+    - MySQL
+    - MongoDB
+
+- name: API Testing
+  items:
+    - Postman
+    - Insomnia
+    - SoapUI
+
+- name: Automation Frameworks
+  items:
+    - Selenium
+    - Cypress
+    - Playwright
+    - Appium
+    - Katalon Studio
+    - Robot Framework
+    - Karate
+
+- name: Performance Testing
+  items:
+    - JMeter
+    - K6
+
+- name: Programming Languages
+  items:
+    - Java
+    - Python
+    - JavaScript
+    - TypeScript
+    - Groovy
+    - Golang

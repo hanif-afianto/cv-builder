@@ -1,0 +1,142 @@
+- company: PT LION EXPRESS
+  role: SDET
+  type: CONTRACT
+  period: APR 2025 – PRESENT
+  activities-and-responsibilities:
+    - Increased automated test coverage to 80%, strengthening regression reliability and reducing production defects.
+    - Improved overall test execution success rate to 95% through stabilization and optimization of existing test suites.
+    - Maintained and enhanced existing automation test code to ensure scalability, readability, and long-term sustainability.
+    - Led the migration of the automation framework from Robot Framework to Playwright to improve execution speed, flexibility, and modern testing capabilities.
+  expertise:
+    - Test Automation Architecture
+    - Framework Migration
+    - Test Suite Optimization
+    - CI-Friendly Automation
+    - Regression Strategy
+  technologies:
+    - Playwright
+    - Robot Framework
+    - Python
+    - TypeScript
+    - JavaScript
+    - GitHub
+
+- company: PT LINK NET
+  role: QUALITY ASSURANCE ENGINEER
+  type: CONTRACT
+  period: SEP 2023 – MAR 2025
+  activities-and-responsibilities:
+    - Led end-to-end QA activities across the SDLC within Agile environments, ensuring timely and high-quality project delivery.
+    - Delivered high-impact systems (including Case Management, CCTS, TC, SRO, and SR) consistently meeting release deadlines.
+    - Executed comprehensive black-box testing (smoke, sanity, regression, pre- and post-release) to ensure product stability.
+    - Designed structured test plans and test cases in Azure DevOps to standardize and streamline testing workflows.
+    - Implemented an effective defect tracking and triaging process to accelerate issue resolution.
+    - Developed and maintained web automation scripts using Playwright to improve regression efficiency.
+  expertise:
+    - SDLC & Agile QA
+    - Black-Box Testing
+    - Test Planning & Documentation
+    - Defect Tracking & Triage
+    - Web Automation
+  technologies:
+    - Playwright
+    - Azure DevOps
+
+- company: PT INTIKOM BERLIAN MUSTIKA
+  role: QA TESTER
+  type: CONTRACT
+  period: FEB 2023 – AUG 2023
+  project: 
+    - name: PT KB FINANSIA MULTI FINANCE
+      activities-and-responsibilities:
+        - Contributed to full SDLC processes in an Agile setup, ensuring alignment between business and technical teams.
+        - Played a key role in the Core Kredit Plus project, maintaining product quality and delivery timelines.
+        - Created comprehensive test plans and detailed test cases to enhance test coverage and traceability.
+        - Performed UI/UX and functional testing across multiple test cycles (smoke, sanity, regression, release).
+        - Established structured defect documentation and tracking practices for efficient resolution.
+        - Built API and mobile automation test scripts using Katalon Studio.
+      expertise:
+        - Functional Testing
+        - UI/UX Validation
+        - Test Case Design
+        - API Automation
+        - Mobile Testing
+      technologies:
+        - Katalon Studio
+
+- company: PT SMARTFREN TELECOM
+  role: QUALITY ASSURANCE ENGINEER
+  type: FULL-TIME
+  period: JAN 2019 – JAN 2023
+  activities-and-responsibilities:
+    - Managed QA lifecycle processes within Agile squads, ensuring smooth cross-functional collaboration.
+    - Delivered major digital initiatives including Billing & Charging systems, Smartpoin (MySF loyalty), and Stay Squad (MySF gamification).
+    - Designed comprehensive test strategies, test plans, and test cases to improve release quality.
+    - Established and maintained robust defect management and reporting workflows.
+    - Developed automation scripts for API, web, and mobile platforms using Robot Framework and Katalon Studio.
+    - Implemented performance testing (load and stress testing) using JMeter and K6 to validate system scalability.
+  expertise:
+    - Test Strategy & Planning
+    - Agile QA Lifecycle
+    - Automation Testing
+    - Performance Testing
+    - API, Web & Mobile Testing
+  technologies:
+    - Robot Framework
+    - Katalon Studio
+    - Karate
+    - JMeter
+    - K6
+    - GitLab
+
+- company: PT WARUNG GROUP INDONESIA
+  role: QUALITY ASSURANCE ENGINEER
+  type: FREELANCE
+  period: MAY 2022 – AUG 2022
+  activities-and-responsibilities:
+    - Executed end-to-end QA processes within Agile environments to ensure release readiness.
+    - Conducted functional, regression, and smoke testing across web platforms.
+    - Designed and built a web automation framework from scratch using Katalon Studio.
+  expertise:
+    - Functional Testing
+    - Regression Testing
+    - Automation Framework Design
+  technologies:
+    - Katalon Studio
+
+- company: PT GLOBAL FUTURE TECHNOLOGIES
+  role: ANDROID DEVELOPER
+  type: INTERNSHIP
+  period: MAY 2017 – JUL 2017
+  activities-and-responsibilities:
+    - Designed and developed a native Android prayer companion application using Java and XML.
+    - Integrated real-time prayer schedule data from the Ministry of Religion.
+    - Implemented a Qibla direction compass feature to enhance user functionality.
+  expertise:
+    - Android Development
+    - API Integration
+    - Mobile UI Implementation
+  technologies:
+    - Android
+    - Java
+    - XML
+    - SQLite
+    - Material Design
+
+- company: PT TELEKOMUNIKASI INDONESIA
+  role: IT SUPPORT
+  type: INTERNSHIP
+  period: FEB 2013 – AUG 2013
+  activities-and-responsibilities:
+    - Installed, configured, and maintained hardware, operating systems, and enterprise applications.
+    - Monitored system and network performance to ensure operational stability.
+    - Diagnosed and resolved hardware, software, and networking issues to minimize downtime.
+  expertise:
+    - System Administration
+    - Hardware & Software Troubleshooting
+    - Network Monitoring
+  technologies:
+    - Windows
+    - Linux
+    - Microsoft Office
+    - Networking
