@@ -7,11 +7,11 @@ node_modules/
 
 # Personal Data & Production Templates
 # (Ignore actual data while keeping example files)
-/data/content/
-/data/assets/
-!/data/examples/
-/templates/ats/
-/templates/creative/
+!/data/content/
+!/data/assets/
+/data/examples/
+!/templates/ats/
+!/templates/creative/
 
 # Build Output
 *.pdf
