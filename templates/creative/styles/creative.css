@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@page {
+  size: A4;
+}
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #444444;
+  --bg-sidebar: #f7f7f7;
+  --accent-color: #a0a0a0;
+  --font-main: 'Inter', sans-serif;
+  --sidebar-width: 32%;
+}
+
+body {
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color);
+  line-height: 1.4;
+  font-size: 10.5pt;
+}
+
+/* Master Table Layout for Pagination */
+.cv-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.cv-table td, .cv-table th {
+  padding: 0;
+  vertical-align: top;
+  border: none;
+}
+
+.col-sidebar {
+  width: var(--sidebar-width);
+}
+
+.col-main {
+  width: calc(100% - var(--sidebar-width));
+}
+
+/* Header repetition logic */
+thead {
+  display: table-header-group;
+}
+
+/* Header Container for Page 1 Only */
+.header-container {
+  display: flex;
+  width: 100%;
+}
+
+.header-aside {
+  width: var(--sidebar-width);
+  padding: 0 20px 20px 0;
+}
+
+.header-main {
+  width: calc(100% - var(--sidebar-width));
+  padding: 0 0 20px 30px;
+}
+
+.sidebar-identity {
+  margin-bottom: 25px;
+  text-align: center; /* Centering Name and Title */
+}
+
+.sidebar-identity h1, .sidebar-identity h2 {
+  text-align: center;
+}
+
+.sidebar-identity h1 {
+  font-size: 19pt;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.sidebar-identity h2 {
+  font-size: 13pt;
+  font-weight: 800;
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+/* Sidebar Styling in Body */
+.sidebar-content {
+  padding: 20px 20px 30px 0; /* Added top padding for vertical alignment */
+}
+
+.photo-container {
+  width: 120px;
+  height: 160px;
+  margin: 0 auto 15px; /* Reduced margin to bring name closer */
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sidebar-section {
+  margin-bottom: 25px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.sidebar-section h3 {
+  font-size: 14pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 8pt;
+  font-weight: 600; /* Semi-bold */
+  color: var(--secondary-color);
+}
+
+.contact-item svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Timeline in Sidebar */
+.timeline {
+  position: relative;
+  margin-left: 5px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  break-inside: avoid;
+}
+
+.timeline-title {
+  font-size: 11pt;
+  font-weight: 800;
+  margin-bottom: 4px;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 2px;
+  display: inline-block;
+  min-width: 100%;
+}
+
+.timeline-content {
+  font-size: 8pt;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+.techstack .timeline-title {
+  text-transform: uppercase;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 12px;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--accent-color);
+}
+
+.timeline-item:last-child::after {
+  display: none;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Main Content Styling */
+.main-content {
+  padding: 20px 0 30px 30px; /* Added top padding for vertical alignment */
+}
+
+.summary {
+  margin-bottom: 25px;
+  font-size: 9pt;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.section-title {
+  font-size: 15pt;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  letter-spacing: 0.5px;
+}
+
+/* Experience Layout */
+.experience-list {
+  position: relative;
+  /* Removed margin-top to bring content closer to title */
+}
+
+.job-header-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 5px;
+  table-layout: fixed;
+}
+
+.job-header-table td {
+  padding: 0;
+  vertical-align: middle;
+  border: none;
+}
+
+.job-header-table .row-top td {
+  padding-bottom: 2px;
+}
+
+.cell-role {
+  width: 60%;
+  text-align: left;
+  vertical-align: middle !important;
+  font-weight: 600;
+  font-size: 11.5pt;
+  text-transform: uppercase;
+}
+
+.cell-period {
+  width: 60%;
+  text-align: right;
+  vertical-align: bottom !important;
+  font-weight: 600;
+  font-size: 9pt;
+  text-transform: uppercase;
+}
+
+.cell-company {
+  width: 40%;
+  text-align: left;
+  vertical-align: middle !important;
+  font-weight: 600;
+  font-size: 9pt;
+  color: var(--secondary-color);
+}
+
+.cell-type {
+  width: 40%;
+  text-align: right;
+  vertical-align: middle !important;
+  font-weight: 600;
+  font-size: 9pt;
+  text-transform: uppercase;
+}
+
+.experience-divider {
+  border: none;
+  border-top: 2px solid var(--accent-color);
+  margin: 5px 0 10px;
+  width: 100%;
+}
+
+.experience-item {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 30px;
+  display: block;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.experience-item::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 14px;
+  bottom: -25px;
+  width: 2px;
+  background-color: var(--accent-color);
+}
+
+.experience-item:last-child::after {
+  display: none;
+}
+
+.experience-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.achievements {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  list-style-type: disc; /* Standardized to match sub-achievements */
+}
+
+.achievements li {
+  margin-bottom: 2px; /* Reduced from 4px */
+  font-size: 8.5pt; /* Reduced from 9pt to match sub-achievements */
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--secondary-color); /* Added to match sub-achievements */
+}
+
+.achievements li.achievement-header {
+  list-style-type: none;
+  margin-left: -18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.sub-achievements {
+  margin-top: 4px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.achievement-header .sub-achievements {
+  list-style-type: disc;
+}
+
+.sub-achievements li {
+  margin-bottom: 2px;
+  font-size: 8.5pt;
+  color: var(--secondary-color);
+}
+
+
+.project-label {
+  margin: 0 0 6px;
+  font-size: 8pt;
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-style: italic;
+}
+
+.project-name {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.subsection-label {
+  margin: 0 0 2px;
+  font-size: 8pt;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.used-tech {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.tech-label {
+  font-size: 8pt;
+  font-weight: 600;
+  color: var(--secondary-color);
+  white-space: nowrap;
+}
+
+.used-tech-inline {
+  margin: 6px 0 0;
+  font-size: 8pt;
+  color: var(--secondary-color);
+  line-height: 1.4;
+}
+
+.tech-tag {
+  background-color: #f5f5f5;
+  color: var(--secondary-color);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 7.5pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #e0e0e0;
+}
+
+/* Education */
+.education-item {
+  margin-bottom: 15px;
+  break-inside: avoid;
+}
+
+.edu-degree {
+  font-weight: 700;
+  font-size: 8.5pt;
+  text-transform: uppercase;
+}
+
+.edu-meta {
+  font-size: 7.5pt;
+  color: var(--secondary-color);
+}
+
+.edu-institution {
+  font-weight: 600;
+}

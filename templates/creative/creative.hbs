@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{profile.name}}</title>
+  <style>
+    {{{css}}}
+  </style>
+</head>
+<body>
+
+
+<table class="cv-table">
+  <thead>
+    <tr>
+      <th class="col-sidebar"></th>
+      <th class="col-main"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Main Content Row -->
+    <tr>
+      <td class="col-sidebar">
+        {{> sidebar}}
+      </td>
+      <td class="col-main">
+        {{> experience}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

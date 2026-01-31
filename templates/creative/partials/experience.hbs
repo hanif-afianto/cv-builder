@@ -1,0 +1,59 @@
+<div class="main-content">
+  <div class="summary">
+    {{profile.summary}}
+  </div>
+  <div class="sidebar-section">
+    <h3 class="section-title">EXPERIENCE</h3>
+  </div>
+  <div class="experience-list">
+    {{#each experience}}
+    <div class="experience-item">
+      <table class="job-header-table">
+        <tr class="row-top">
+          <td class="cell-role">{{role}}</td>
+          <td class="cell-period">{{period}}</td>
+        </tr>
+        <tr class="row-bottom">
+          <td class="cell-company">{{company}}</td>
+          <td class="cell-type">{{type}}</td>
+        </tr>
+      </table>
+      <hr class="experience-divider">
+      {{#if project}}
+      {{#each project}}
+      <p class="project-label">Project placement: <span class="project-name">{{name}}</span></p>
+      {{#if activities-and-responsibilities}}
+      <p class="subsection-label">Notable activities &amp; responsibilities:</p>
+      <ul class="achievements">
+        {{#each activities-and-responsibilities}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
+      {{#if expertise}}
+      <p class="used-tech-inline"><span class="tech-label">Expertise:</span> {{#each expertise}}{{this}}{{#unless @last}}; {{/unless}}{{/each}}.</p>
+      {{/if}}
+      {{#if technologies}}
+      <p class="used-tech-inline"><span class="tech-label">Technologies:</span> {{#each technologies}}{{this}}{{#unless @last}}; {{/unless}}{{/each}}.</p>
+      {{/if}}
+      {{/each}}
+      {{else}}
+      {{#if activities-and-responsibilities}}
+      <p class="subsection-label">Notable Activities &amp; Responsibilities:</p>
+      <ul class="achievements">
+        {{#each activities-and-responsibilities}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
+      {{#if expertise}}
+      <p class="used-tech-inline"><span class="tech-label">Expertise:</span> {{#each expertise}}{{this}}{{#unless @last}}; {{/unless}}{{/each}}.</p>
+      {{/if}}
+      {{#if technologies}}
+      <p class="used-tech-inline"><span class="tech-label">Technologies:</span> {{#each technologies}}{{this}}{{#unless @last}}; {{/unless}}{{/each}}.</p>
+      {{/if}}
+      {{/if}}
+    </div>
+    {{/each}}
+  </div>
+</div>
