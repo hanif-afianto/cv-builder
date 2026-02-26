@@ -25,17 +25,24 @@ header h1 {
 .contact-info {
   font-size: 10pt;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.contact-row {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2px 0;
 }
 
-.contact-info span {
+.contact-row span {
   white-space: nowrap;
 }
 
-.contact-info span:not(:last-child)::after {
-  content: " | ";
+.contact-row span:not(:last-child)::after {
+  content: "\00a0|\00a0";
 }
 
 .contact-info a {
