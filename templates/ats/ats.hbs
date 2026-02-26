@@ -12,10 +12,16 @@
 <header>
   <h1>{{profile.name}}</h1>
   <div class="contact-info">
-    <span>Email: <a href="mailto:{{profile.email}}">{{profile.email}}</a></span>
-    <span>Phone: <a href="https://wa.me/{{phoneDigits profile.phone}}">{{profile.phone}}</a></span>
-    {{#if profile.linkedin}}<span>LinkedIn: <a href="https://{{profile.linkedin}}">{{profile.linkedin}}</a></span>{{/if}}
-    {{#if profile.github}}<span>GitHub: <a href="https://{{profile.github}}">{{profile.github}}</a></span>{{/if}}
+    <div class="contact-row">
+      <span>Email: <a href="mailto:{{profile.email}}">{{profile.email}}</a></span>
+      <span>Phone: <a href="https://wa.me/{{phoneDigits profile.phone}}">{{profile.phone}}</a></span>
+      {{#if profile.linkedin}}<span>LinkedIn: <a href="https://{{profile.linkedin}}">{{profile.linkedin}}</a></span>{{/if}}
+    </div>
+    {{#if profile.github}}
+    <div class="contact-row">
+      <span>GitHub: <a href="https://{{profile.github}}">{{profile.github}}</a></span>
+    </div>
+    {{/if}}
   </div>
 </header>
 
